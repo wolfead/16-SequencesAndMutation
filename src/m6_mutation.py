@@ -4,8 +4,8 @@ In this module, you mutate by CHANGING elements of a list.
 
 Authors: David Mutchler, Amanda Stouder, Chandan Rupakheti, Katie Dion,
          Claude Anderson, Delvin Defoe, Curt Clifton, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Alex Wolfe.
+"""  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 # ----------------------------------------------------------------------
 # STUDENTS:
@@ -129,11 +129,17 @@ def RETURN_replace_negatives_by_zeros(numbers):
 
     Precondition: The argument is a list of numbers.
     """
-    # TODO: 2. First, READ THE ABOVE TEST CODE.
+    # done: 2. First, READ THE ABOVE TEST CODE.
     #          Make sure that you understand it.
     #          Then, IMPLEMENT and test THIS FUNCTION
     #          (using the above code for testing).
-
+    new_list = []
+    for k in range(len(numbers)):
+        if numbers[k] < 0:
+            new_list = new_list + [0]
+        else:
+             new_list = new_list + [numbers[k]]
+    return new_list
 
 def run_test_MUTATE_replace_negatives_by_zeros():
     """ Tests the   MUTATE_replace_negatives_by_zeros   function. """
@@ -185,10 +191,13 @@ def MUTATE_replace_negatives_by_zeros(numbers):
 
     Precondition: The argument is a list of numbers.
     """
-    # TODO: 3. First, READ THE ABOVE TEST CODE.
+    # done: 3. First, READ THE ABOVE TEST CODE.
     #          Make sure that you understand it.
     #          Then, IMPLEMENT and test THIS FUNCTION
     #          (using the above code for testing).
+    for k in range(len(numbers)):
+        if numbers[k] < 0:
+            numbers[k] = 0
 
 # ----------------------------------------------------------------------
 # If this module is running at the top level (as opposed to being

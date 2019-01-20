@@ -24,7 +24,7 @@ import random
 
 # ----------------------------------------------------------------------
 # Students: Read and run this program.
-#           Do you see how   MUTATION   made the nasty stuff possibe?
+#           Do you see how   MUTATION   made the nasty stuff possible?
 #           If objects were immutable, the show_balances method simply
 #           could NOT steal her money!
 # ----------------------------------------------------------------------
